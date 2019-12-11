@@ -1,0 +1,9 @@
+.errorHeader{
+    text-align: center;
+}
+
+.errorMain{
+    width: 100%;
+    margin-left: -8px;
+    padding-top: 30px;
+}
