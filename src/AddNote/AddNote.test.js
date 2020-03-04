@@ -1,7 +1,11 @@
 import React from 'react';
+import Enzyme from 'enzyme'
 import { shallow } from 'enzyme'
 import toJson from 'enzyme-to-json'
 import AddNote from './AddNote'
+import Adapter from 'enzyme-adapter-react-16';
+
+Enzyme.configure({ adapter: new Adapter() });
 
 describe(`AddNote component`, () => {
   const stubFolders = [

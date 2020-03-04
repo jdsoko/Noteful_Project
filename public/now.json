@@ -1,0 +1,7 @@
+{"version": 2,
+    "alias": "johns-noteful-project",
+    "name": "noteful-project",
+    "routes": [
+        { "handle": "filesystem" },
+        { "src": "/.*", "dest": "/index.html" }
+    ]}

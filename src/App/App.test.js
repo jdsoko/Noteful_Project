@@ -8,6 +8,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import App from './App'
 
+
 library.add(faPlus, faChevronLeft, faTrashAlt, faCheckDouble)
 
 it('renders without crashing', () => {

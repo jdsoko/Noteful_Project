@@ -1,7 +1,11 @@
 import React from 'react';
+import Enzyme from 'enzyme'
 import { shallow } from 'enzyme'
 import toJson from 'enzyme-to-json'
 import NoteListNav from './NoteListNav'
+import Adapter from 'enzyme-adapter-react-16';
+
+Enzyme.configure({ adapter: new Adapter() });
 
 describe(`NoteListNav component`, () => {
   it('renders a .NoteListNav by default', () => {

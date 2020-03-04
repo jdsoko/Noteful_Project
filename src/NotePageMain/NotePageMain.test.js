@@ -1,7 +1,11 @@
 import React from 'react';
+import Enzyme from 'enzyme'
 import { shallow } from 'enzyme'
 import toJson from 'enzyme-to-json'
 import NotePageMain from './NotePageMain'
+import Adapter from 'enzyme-adapter-react-16';
+
+Enzyme.configure({ adapter: new Adapter() });
 
 describe(`NotePageMain component`, () => {
   it('renders a .NotePageMain by default', () => {
