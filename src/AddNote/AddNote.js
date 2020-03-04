@@ -15,12 +15,12 @@ class AddNote extends Component {
 
   handleSubmit = e => {
     e.preventDefault()
-    const newNote = {
+    let newNote = {
       name: e.target['note-name'].value,
       content: e.target['note-content'].value,
       folderId: e.target['note-folder-id'].value,
-      modified: new Date(),
     }
+    
     fetch(`${config.API_ENDPOINT}/notes`, {
       method: 'POST',
       headers: {
@@ -89,3 +89,4 @@ AddNote.propTypes = {
 }
 
 export default AddNote
+

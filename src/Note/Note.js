@@ -35,7 +35,9 @@ import PropTypes from 'prop-types';
       })
       .catch(error => {
         console.error({ error })
+        
       })
+      window.location.reload(true)
   }
 
   render() {
@@ -71,7 +73,7 @@ import PropTypes from 'prop-types';
 }
 
 Note.propTypes = {
-  id: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
   modified: PropTypes.string.isRequired
 }

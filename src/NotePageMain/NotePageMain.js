@@ -19,7 +19,8 @@ class NotePageMain extends React.Component {
 
   render() {
     const { notes=[] } = this.context
-    const { noteId } = this.props.match.params
+    let { noteId } = this.props.match.params
+    noteId = parseInt(noteId)
     const note = findNote(notes, noteId) || { content: '' }
     return (
       <section className='NotePageMain'>

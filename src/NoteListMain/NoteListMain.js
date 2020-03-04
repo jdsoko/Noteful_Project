@@ -17,7 +17,8 @@ import PropTypes from 'prop-types';
   static contextType = ApiContext
 
   render() {
-    const { folderId } = this.props.match.params
+    let { folderId } = this.props.match.params
+    folderId = parseInt(folderId)
     const { notes=[] } = this.context
     const notesForFolder = getNotesForFolder(notes, folderId)
     return (

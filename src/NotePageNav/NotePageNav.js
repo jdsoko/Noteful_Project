@@ -19,7 +19,8 @@ class NotePageNav extends React.Component {
 
   render() {
     const { notes, folders, } = this.context
-    const { noteId } = this.props.match.params
+    let { noteId } = this.props.match.params
+    noteId = parseInt(noteId)
     const note = findNote(notes, noteId) || {}
     const folder = findFolder(folders, note.folderId)
     return (
@@ -50,3 +51,4 @@ NotePageNav.propTypes = {
 }
 
 export default NotePageNav
+

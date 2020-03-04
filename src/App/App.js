@@ -17,7 +17,7 @@ class App extends Component {
     notes: [],
     folders: [],
   };
-
+  
   componentDidMount() {
     Promise.all([
       fetch(`${config.API_ENDPOINT}/notes`),
