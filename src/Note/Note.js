@@ -36,7 +36,7 @@ import PropTypes from 'prop-types';
         console.error({ error })
         
       })
-      window.location.reload(true)
+      setTimeout(() => window.location.reload(), 200)
   }
 
   render() {
